@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+.jumbotron {
+  background-image: url("bg.jpg");
+  padding-bottom: 400px;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotext {
+  color: #f7f7f5;
+  background-color: rgba(6, 6, 7, 0.2);
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.navbar-dark {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 7, 7, 0)), to(#0e0c13));
+  background-image: linear-gradient(to left, rgba(7, 7, 7, 0), #0e0c13);
+}
+
+span {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Navbar, NavbarBrand, Jumbotron, Nav, NavbarToggler, NavItem, Collapse,Card,CardTitle,CardImg,CardImgOverlay,CardHeader} from 'reactstrap';
+import {Navbar, NavbarBrand, Jumbotron, Nav, NavbarToggler, NavItem, Collapse,Card,CardTitle,CardImg,CardImgOverlay,CardHeader,Carousel} from 'reactstrap';
 import {NavLink} from 'react-router-dom'
 import {DISHES} from '../shared/dishes'
 export class Header extends Component {
@@ -17,14 +17,17 @@ export class Header extends Component {
         });
     }
     render() {
+        const dish=this.state.dishes;
         const menu=this.state.dishes.map((dish)=>{
             return (
                 <div key={dish.id} className="col-12 col-md-3 m-1 ">
+                    
                     <Card>
                         <CardImg width="100%" src={dish.image} alt="dishname" />
                         <CardHeader>{dish.name}</CardHeader>
                     </Card>
                 </div>
+                
             )
         }
         );
@@ -34,7 +37,7 @@ export class Header extends Component {
                 <div className="container">
                     <NavbarToggler onClick={this.toggleNav} />
                     <NavbarBrand className="mr-auto" href="/">
-                        <img src="assets/images/logo.jpg" className=" rounded-circle ml-2" height="50%" width="60%" alt="Restorinto Con Fusion" />
+                        <img src="assets/images/logo.jpg" className=" rounded-circle col-4 ml-2" height="20%" width="20%" alt="Restorinto Con Fusion" />
                     </NavbarBrand>
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar>

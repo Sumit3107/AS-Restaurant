@@ -8,6 +8,7 @@ export class Owner extends Component {
             owner:OWNER
         }
     }
+    
     render() {
         const owner=this.state.owner.map((owner)=>{
             return(
